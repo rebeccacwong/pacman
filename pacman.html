@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title> Pacman </title>
+<link rel = "stylesheet" type = "text/css" href = "pacman.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+<div class = 'title'>PAC-man</div>
+
+<div id = 'row'>
+	<p id = 'curr'> Current score: <span id = 'curr-score'> 0 </span> </p>
+</div>
+
+<div id = 'parent'>
+	<div id = 'start-screen'>
+		<span id = 'start' onclick='start()'>start</span>
+	</div>
+	<div id = 'game-over-screen'>
+		<span class = 'blink' id = 'game-over-text'> Game Over </span>
+		<span class = 'more'>
+			<p id = 'score' style='color: black'></p>
+			<p id = 'restart' onclick='location.reload();'> play again </p>
+		</span>
+	</div>
+	<div id = 'maze-container'>
+	</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="pacman.js"></script>
+</html>
